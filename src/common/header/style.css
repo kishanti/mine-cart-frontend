@@ -1,0 +1,182 @@
+.admin-dashboard-header {
+    z-index: 10;
+    width: 100%;
+    height: var(--admin-dashboard-height);
+    background-color: var(--color-white);
+    border-bottom: 1px solid #E3E5E6;
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.admin-dashboard-header-container {
+    width: 100%;
+    max-width: calc(100% - 80px);
+    margin: 0 auto;
+}
+
+.admin-dashboard-header-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-dashboard-header-logo {
+    width: 100%;
+    max-width: 275px;
+}
+
+.admin-dashboard-header-navigation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.admin-dashboard-header-navigation-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    gap: 40px;
+}
+
+.admin-dashboard-header-nav-item {
+    position: relative;
+}
+
+.admin-dashboard-header-nav-item:not(:last-child):after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #E3E5E5;
+    position: absolute;
+    top: 0;
+    left: calc(100% + 20px);
+    transform: translateX(-50%);
+}
+
+.admin-dashboard-header-nav-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.admin-dashboard-header-nav-link {
+    color: var(--color-alpha);
+}
+
+.admin-dashboard-header-nav-link:hover,
+.admin-dashboard-header-nav-link:focus,
+.admin-dashboard-header-nav-link:active {
+    color: var(--color-prime);
+}
+
+a.admin-job-post-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-prime);
+    color: var(--color-alpha);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 118%;
+    padding: 9px 21px;
+    margin-right: 30px;
+}
+
+a.admin-job-post-button:hover {
+    color: var(--color-prime);
+}
+
+.admin-job-post-icon {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.admin-dashboard-header-profile-drop-items .ant-space {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 119%;
+    color: var(--color-alpha);
+}
+
+.admin-dashboard-header-profile {
+    width: 20px;
+    height: 20px;
+}
+
+.admin-dashboard-header-profile-drop-down .ant-dropdown-menu {
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-dashboard-header-profile-drop-down .ant-dropdown-menu-item {
+    padding: 0;
+}
+
+.admin-dashboard-header-profile-drop-down .ant-dropdown-menu-item:hover,
+.admin-dashboard-header-profile-drop-down .ant-dropdown-menu-item:active,
+.admin-dashboard-header-profile-drop-down .ant-dropdown-menu-item:focus {
+    background-color: transparent;
+}
+
+.admin-dashboard-profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.admin-dashboard-profile-details h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-alpha);
+    margin-bottom: 4px;
+}
+
+.admin-dashboard-profile-details p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A1ADB2;
+    margin-bottom: 0;
+}
+
+.admin-dashboard-profile-drop-down-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.admin-dashboard-profile-drop-down-item-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+}
+
+.admin-dashboard-profile-drop-down-item-text {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-alpha);
+}
+
+.admin-sign-out-text .admin-dashboard-profile-drop-down-item-icon,
+.admin-sign-out-text .admin-dashboard-profile-drop-down-item-text {
+    color: #cc563e;
+}
